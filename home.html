@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./dist/css/main.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
   </head>
   <body>
     <!-- HEADER -->
@@ -33,7 +35,7 @@
     <!--   BANNER -->
     <section class="homeBanner bg--dark">
       <div class="conatainer">
-        <div class="homeBanner__wrapper">
+        <div class="homeBanner__wrapper"  data-aos="fade-up">
           <h4>IRRESTIBLY GOOD</h4>
           <h1>The Rich Taste of Indian Flavors</h1>
           <p class="mb--3">
@@ -60,7 +62,7 @@
           </p>
         </div>
         <div class="homeMenu__wrapper">
-          <div class="homeMenu__card">
+          <div class="homeMenu__card" >
             <img src="./IMG/rice.png" alt="" />
             <div class="homeMenu__card--details">
               <h4>The Rice Menu</h4>
@@ -68,7 +70,7 @@
               <a href="" class="btn bg--outline">View All Items</a>
             </div>
           </div>
-          <div class="homeMenu__card">
+          <div class="homeMenu__card" >
             <img src="./IMG/chicken.png" alt="" />
             <div class="homeMenu__card--details">
               <h4>The Chicken Menu</h4>
@@ -76,7 +78,7 @@
               <a href="" class="btn bg--outline">View All Items</a>
             </div>
           </div>
-          <div class="homeMenu__card">
+          <div class="homeMenu__card" >
             <img src="./IMG/salad and greens.png" alt="" />
             <div class="homeMenu__card--details">
               <h4>The Salad Menu</h4>
@@ -401,6 +403,10 @@
      </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     <script src="./js/slider.js"></script>
     <script src="./js/toggleMenu.js"></script>
   </body>

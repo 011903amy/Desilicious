@@ -1613,6 +1613,8 @@ img {
 @media screen and (max-width: 520px) {
   .productAdd__wrapper {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .productAdd__section {
@@ -1728,6 +1730,7 @@ img {
 }
 @media screen and (max-width: 520px) {
   .contactMap__wrapper {
+    padding: -1rem;
     display: none;
   }
 }

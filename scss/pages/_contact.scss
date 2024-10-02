@@ -55,6 +55,7 @@
         }
 
           @include mediaQuery(520px){
+            padding: -1rem;
            display: none;
         }
     }
