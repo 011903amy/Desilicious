@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+@use "../base/" as*;
+
+.menuCuisine{
+    &__wrapper{
+         @include evenGrid(2, 1rem);
+          justify-items: center;
+          margin-bottom: 5rem;
+        
+       
+    }
+
+    &__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30rem;
+        margin-right: 10rem;
+        margin-left: 10rem;
+      
+        img{
+            border-radius: 3rem;
+        }
+    }
+
+}

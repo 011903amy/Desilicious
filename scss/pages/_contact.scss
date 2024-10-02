@@ -1,0 +1,106 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.contactSocial{
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    &__socials{
+        display: flex;
+        justify-content: center;
+       
+        
+      li{
+        @include centerAll;
+        margin-left: 3rem;
+        
+      }
+      p{
+        @include centerAll;
+        margin-left: 3rem;
+         font-size: 1rem;
+        
+      }
+      
+      i{
+        color: $clr--secondary;
+        font-size: 2rem;
+      }
+    }
+}
+
+.contactMap{
+    &__wrapper{
+        @include centerAll;
+
+        iframe{
+            border-radius: 2rem;
+            width: 50rem;
+            height: 30rem;
+             margin-left: 3rem;
+        }
+    }
+}
+
+.contactInfo{
+    &__wrapper{
+        @include centerAll;
+    }
+
+    &__info{
+        margin-left: 16rem;
+        display: flex;
+        flex-direction: column;
+        width: 60rem;
+        height: 45rem;
+        
+
+        h4{
+            font-size: 2rem;
+        }
+
+        form{
+            
+            padding: 2rem;
+
+        }
+        .contactInfo__button{
+            text-align: center;
+            letter-spacing: .1rem;
+           
+        }
+
+        input{
+            background-color: transparent;
+            border: 1px solid $clr--light;
+            width: 98%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-radius: .5rem;
+            gap: 2rem;
+        }
+        textarea{
+            @extend input;
+            height: 10rem;
+            margin-bottom: 3rem;
+        }
+
+   
+} 
+ &__name{
+        @include between;
+       
+        input{
+            
+            border: 1px solid $clr--light;
+            width: 27rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-radius: .5rem;
+        }
+    }  
+}

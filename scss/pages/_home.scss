@@ -1,0 +1,223 @@
+@use "../abstract/" as *;
+@use "../base/" as*;
+
+.homeBanner{
+    padding: 10rem 0;
+    &__wrapper{
+        @include centerAll;
+        flex-direction: column;
+
+        
+        h4{
+            color: $clr--secondary;
+            letter-spacing: .5rem;
+            margin-bottom: 2rem;
+            font-weight: 200;
+
+        }
+        h1{
+            color: $clr--light;
+            font-family: $font--secondary;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: -2px -2px $clr--secondary;
+        }
+    }
+    &__button{
+        @include between;
+        gap: 1rem;
+    }
+}
+.homeMenu{
+ 
+    &__wrapper{
+        @include unevenGrid(25rem 25rem 25rem, 3rem);
+        place-content: center;
+
+        @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
+    }
+    &__card{
+        padding: 2rem 1rem;
+        text-align: center;
+        border: 2px solid transparent;
+        margin-bottom: 5rem;
+        
+        &:hover{
+           border: 2px solid $clr--secondary;
+           border-radius: 2rem
+        }
+        img{
+            width: 17rem;
+        }
+        &--details p{
+            color: $clr--secondary;
+        }
+    }
+}
+.homeAbout{
+    background-image: url(../../IMG/about.png);
+    @include bgSize;
+    height: 70vh;
+    width: 100vw;
+    @include centerAll;
+    text-align: left;
+    &__wrapper{
+      
+        max-width: 40rem;
+        h4{
+        margin-bottom: 2rem;
+        font-family: $font--secondary;
+        font-style: 2.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        
+    }
+}
+.homeCuisine{
+    &__wrapper{
+        @include evenGrid(2, 1rem);
+        justify-items: center;
+
+        @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
+.homeBooking{
+     @include mediaQuery(520px){
+            padding: 1rem 0;
+
+        }
+    &__wrapper{
+        @include centerAll;
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) ,url(../../IMG/book\ a\ table\ bg.jpg);
+        @include bgSize;
+        height: 120vh;
+
+         @include mediaQuery(520px){
+           background-image: none;
+           height: auto;
+        }
+    }
+    &__table{
+        padding: 5rem;
+        width: 60rem;
+        height: 45rem;
+
+         @include mediaQuery(520px){
+            width: 100%;
+            padding: 0;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        form{
+            border:1px solid $clr--light;
+            padding: 2rem;
+        }
+        input{
+            width: 98%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            background-color: transparent;
+            border: 1px solid $clr--secondary;
+        }
+        textarea{
+            @extend input;
+            height: 10rem;
+            margin-bottom: 3rem;
+        }
+        input::placeholder{
+            font-family: $font--primary;
+            color: $clr--light;
+        }
+        input:focus, input:enabled{
+            color: $clr--light;
+        }
+    }
+    &__name{
+        @include between;
+    }
+
+
+}
+
+.homeTestimonial{
+    padding: 5rem 0;
+    &__wrapper{
+        @include centerAll;
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    &__client{
+        i{
+             font-size: 2rem;
+        margin-bottom: 2rem;
+        border: 2px solid $clr--secondary;
+        padding: 1.5rem;
+        border-radius: 50%;
+        }
+       
+
+    p{
+        margin-bottom: 1rem;
+    }
+    h4{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $clr--secondary
+    }
+    small{
+        font-weight: 600;
+    }
+    }
+    
+}
+
+.homeVideo{
+     @include mediaQuery(520px){
+            padding: 2rem 0;
+        }
+    &__wrapper{
+        @include centerAll;
+
+
+       iframe{
+         @include mediaQuery(520px){
+            height: 300px;
+       }
+    }
+}
+}
+.homeBlog{
+    background-color: $clr--primary;
+    &__wrapper{
+        @include unevenGrid(25rem 25rem 25rem, 3rem);
+        place-content: center;
+
+         @include mediaQuery(520px){
+            
+            grid-template-columns: 1fr;
+        }
+    }
+     &__card{
+        padding: 2rem 1rem;
+        text-align: left;
+        border: 2px solid transparent;
+        margin-bottom: 5rem;
+
+         &--details p{
+            color: $clr--light;
+        }
+        &--details h4{
+            font-size: 1.5rem;
+        }
+       
+     }
+}

@@ -1,0 +1,25 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.chefName{
+
+    &__wrapper{
+        @include evenGrid(4, 1rem);
+        place-content: center; 
+    }
+    &__card{
+        padding: 2rem 1rem;
+        text-align: center;
+        border: 2px solid transparent;
+     
+
+        img{
+            width: 17rem;
+            border-radius: 2rem;
+        }
+        &--details p{
+            color: $clr--secondary;
+            font-weight: 1000;
+        }
+    }
+}

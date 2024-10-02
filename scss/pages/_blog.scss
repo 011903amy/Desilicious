@@ -1,0 +1,35 @@
+@use "../abstract/" as *;
+@use "../base/" as*;
+
+.blogContent{
+text-align: left;
+    &__wrapper{
+        @include centerAll;
+        
+        
+        flex-direction: column;
+        img{
+        margin-top: 3rem;
+        width: 50rem;
+        border-radius: 2rem;
+        margin-bottom: 5rem;
+        }
+        h4{
+            font-size: 1.5rem;
+        }
+
+        
+       
+    } 
+    
+    &__card{
+        
+        text-align: left;
+       
+        p{
+            margin-top: 1rem;
+            padding-bottom: 3rem;
+        }
+        
+       }
+}
