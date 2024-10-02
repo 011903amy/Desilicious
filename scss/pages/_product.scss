@@ -6,11 +6,19 @@
     @include evenGrid(2, 1rem);
     justify-items: center;
     place-content: center;
+
+       @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
   }
   &__section {
     // padding: 5em 0;
     @include unevenGrid(25rem 25rem 25rem, 1rem);
     place-content: center;
+
+       @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
   }
   &__card {
     padding: 2rem 2rem;
@@ -23,6 +31,7 @@
       font-weight: 700;
     }
     img {
+      
       width: 17rem;
     }
   }

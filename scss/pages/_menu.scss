@@ -7,6 +7,14 @@
           justify-items: center;
           margin-bottom: 5rem;
         
+            @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+
+            img{
+                
+                height: 10rem;
+            }
+        }
        
     }
 
@@ -15,8 +23,6 @@
         align-items: center;
         justify-content: center;
         height: 30rem;
-        margin-right: 10rem;
-        margin-left: 10rem;
       
         img{
             border-radius: 3rem;

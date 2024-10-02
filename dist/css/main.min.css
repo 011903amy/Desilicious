@@ -1560,13 +1560,19 @@ img {
   justify-items: center;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 520px) {
+  .menuCuisine__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .menuCuisine__wrapper img {
+    height: 10rem;
+  }
+}
 .menuCuisine__img {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30rem;
-  margin-right: 10rem;
-  margin-left: 10rem;
 }
 .menuCuisine__img img {
   border-radius: 3rem;
@@ -1577,6 +1583,11 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   place-content: center;
+}
+@media screen and (max-width: 520px) {
+  .chefName__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 .chefName__card {
   padding: 2rem 1rem;
@@ -1599,11 +1610,21 @@ img {
   justify-items: center;
   place-content: center;
 }
+@media screen and (max-width: 520px) {
+  .productAdd__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .productAdd__section {
   display: grid;
   grid-template-columns: 25rem 25rem 25rem;
   gap: 1rem;
   place-content: center;
+}
+@media screen and (max-width: 520px) {
+  .productAdd__section {
+    grid-template-columns: 1fr;
+  }
 }
 .productAdd__card {
   padding: 2rem 2rem;
@@ -1665,6 +1686,14 @@ img {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 520px) {
+  .contactSocial__socials {
+    padding: 5rem 0;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contactSocial__socials li {
   display: flex;
   justify-content: center;
@@ -1697,6 +1726,11 @@ img {
   height: 30rem;
   margin-left: 3rem;
 }
+@media screen and (max-width: 520px) {
+  .contactMap__wrapper {
+    display: none;
+  }
+}
 
 .contactInfo__wrapper {
   display: flex;
@@ -1705,11 +1739,17 @@ img {
   text-align: center;
 }
 .contactInfo__info {
-  margin-left: 16rem;
   display: flex;
   flex-direction: column;
   width: 60rem;
   height: 45rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 520px) {
+  .contactInfo__info {
+    width: 100%;
+    padding: 0;
+  }
 }
 .contactInfo__info h4 {
   font-size: 2rem;
@@ -1745,6 +1785,11 @@ img {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+@media screen and (max-width: 520px) {
+  .contactInfo__name input, .contactInfo__name .contactInfo__info textarea, .contactInfo__info .contactInfo__name textarea {
+    width: 8rem;
+  }
 }
 
 .blogContent {

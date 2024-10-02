@@ -6,6 +6,11 @@
     &__wrapper{
         @include evenGrid(4, 1rem);
         place-content: center; 
+
+        
+         @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
     }
     &__card{
         padding: 2rem 1rem;

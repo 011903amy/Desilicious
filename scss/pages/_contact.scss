@@ -7,11 +7,21 @@
         display: flex;
         justify-content: center;
         gap: 5rem;
+
+        
     }
 
     &__socials{
         display: flex;
         justify-content: center;
+
+        
+          @include mediaQuery(520px){
+            padding: 5rem 0;
+            gap: 5rem;
+            display: flex;
+            flex-direction: column
+        }
        
         
       li{
@@ -43,20 +53,30 @@
             height: 30rem;
              margin-left: 3rem;
         }
+
+          @include mediaQuery(520px){
+           display: none;
+        }
     }
 }
 
 .contactInfo{
     &__wrapper{
         @include centerAll;
+
     }
 
     &__info{
-        margin-left: 16rem;
+        
         display: flex;
         flex-direction: column;
         width: 60rem;
         height: 45rem;
+        margin: 0 auto;
+         @include mediaQuery(520px){
+            width: 100%;
+            padding: 0;
+        }
         
 
         h4{
@@ -101,6 +121,11 @@
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: .5rem;
+
+             @include mediaQuery(520px){
+            width: 8rem;
+            
+        }
         }
     }  
 }
